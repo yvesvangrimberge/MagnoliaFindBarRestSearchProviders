@@ -1,0 +1,6 @@
+baseUrl: https://serpapi.com/search
+requestParameters: ?q=${query}&google_domain=google.be
+navigationBaseURL: "%s"
+titleJsonPath: $.organic_results[*].title
+navigationURLJsonPath: $.organic_results[*].link
+class: info.magnolia.periscope.search.rest.RestSearchResultSupplierDefinition

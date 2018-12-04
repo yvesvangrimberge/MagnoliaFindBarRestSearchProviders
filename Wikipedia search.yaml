@@ -1,0 +1,6 @@
+baseUrl: https://nl.wikipedia.org/w/api.php
+requestParameters: ?format=json&action=query&titles=${query}&redirects
+navigationBaseURL: "https://nl.wikipedia.org/?curid=%s"
+titleJsonPath: $..title
+navigationURLJsonPath: $..pageid
+class: info.magnolia.periscope.search.rest.RestSearchResultSupplierDefinition
